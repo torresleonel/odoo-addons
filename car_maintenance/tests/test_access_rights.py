@@ -46,13 +46,16 @@ class TestAccessRights(TransactionCase):
         """Test Operator's access rights."""
         cs_operator_user = self.car_service.with_user(self.operator_user)
 
-        # Operator can read, write, create car service
+        # Operator can read, write, create car.service and car.service.line
         cs_operator_user.read()
 
         cs_operator_user.write({
             'service_line_ids': [
                 Command.create({'service_type': 'Coolant', 'price': 20.0})
             ]
+        })
+        cs_operator_user.service_line_ids[0].update({
+            'service_type': 'Clutch', 'price': 45.0
         })
 
         self.env['car.service'].with_user(self.operator_user).create({
@@ -64,21 +67,25 @@ class TestAccessRights(TransactionCase):
             ]
         })
 
-        # Operator can't delete car service
+        # Operator can't delete car.service and car.service.line
         with self.assertRaises(AccessError):
+            cs_operator_user.service_line_ids.unlink()
             cs_operator_user.unlink()
 
     def test_02_access_manager(self):
         """Test Manager's access rights."""
         cs_manager_user = self.car_service.with_user(self.manager_user)
 
-        # Manager can read, write, create, delete car service
+        # Manager can do all actions on car.service and car.service.line
         cs_manager_user.read()
 
         cs_manager_user.write({
             'service_line_ids': [
                 Command.create({'service_type': 'Clutch', 'price': 30.0})
             ]
+        })
+        cs_manager_user.service_line_ids[0].update({
+            'service_type': 'Clutch', 'price': 45.0
         })
 
         self.env['car.service'].with_user(self.manager_user).create({
@@ -90,4 +97,5 @@ class TestAccessRights(TransactionCase):
             ]
         })
 
+        cs_manager_user.service_line_ids.unlink()
         cs_manager_user.unlink()
