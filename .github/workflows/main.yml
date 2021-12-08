@@ -1,0 +1,20 @@
+name: CI
+
+on:
+    push:
+        branches: [ master ]
+    pull_request:
+        branches: [ master ]
+
+    # Allows you to run this workflow manually from the Actions tab
+    workflow_dispatch:
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v2
+
+            - name: Run Odoo unit tests
+                run: docker-compose run odoo -d testdb -i car_maintenance --log-level=test --test-tags /car_maintenance --stop-after-init
