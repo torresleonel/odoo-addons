@@ -11,10 +11,10 @@
     'website': 'https://github.com/torresleonel',
     'category': 'Services',
     'version': '15.0.0.1',
-    'depends': ['base'],
+    'depends': ['base', 'mail'],
     'data': [
         # 'security/ir.model.access.csv',
-        # 'views/views.xml',
+        'views/car_service_views.xml',
         # 'views/templates.xml',
     ],
     'demo': [
