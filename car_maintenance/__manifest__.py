@@ -10,7 +10,7 @@
     'author': 'Leonel Torres',
     'website': 'https://github.com/torresleonel/odoo-addons',
     'category': 'Services',
-    'version': '15.0.0.1',
+    'version': '15.0.1.0',
     'depends': ['base', 'mail'],
     'data': [
         'security/car_maintenance_security.xml',
