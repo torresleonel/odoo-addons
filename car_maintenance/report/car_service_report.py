@@ -14,7 +14,7 @@ class CarServiceLineReport(models.AbstractModel):
         services = self.env['car.service.line'].read_group(
             [], ['service_type', 'price'], ['service_type'])
         services.sort(key=lambda s: s.get('service_type_count'), reverse=True)
-        service_most_requested = [services.pop(0)]
+        service_most_requested = [services.pop(0)] if services else []
 
         for service in services:
             if service.get('service_type_count') < \
