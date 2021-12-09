@@ -94,7 +94,7 @@
 
     <!-- Car Service Line search view definition -->
     <record id="car_service_line_view_search" model="ir.ui.view">
-        <field name="name">car.service.search</field>
+        <field name="name">car.service.line.search</field>
         <field name="model">car.service.line</field>
         <field name="arch" type="xml">
             <search string="Search Service Type">
@@ -165,7 +165,7 @@
 
     <!-- Car Service Line pivot view definition -->
     <record id="car_service_line_view_pivot" model="ir.ui.view">
-        <field name="name">car.service.line.graph</field>
+        <field name="name">car.service.line.pivot</field>
         <field name="model">car.service.line</field>
         <field name="arch" type="xml">
             <pivot string="Service Analysis" sample="1">
