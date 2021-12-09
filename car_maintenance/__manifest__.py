@@ -13,7 +13,8 @@
     'version': '15.0.0.1',
     'depends': ['base', 'mail'],
     'data': [
-        # 'security/ir.model.access.csv',
+        'security/car_maintenance_security.xml',
+        'security/ir.model.access.csv',
         'views/car_service_views.xml',
         'report/car_service_templates.xml',
         'report/car_service_reports.xml'
