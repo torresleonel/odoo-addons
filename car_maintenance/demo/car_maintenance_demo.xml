@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Car Services demo -->
+        <record id="car_service_01_demo" model="car.service">
+            <field name="license_plate">PLATE01</field>
+            <field name="owner_name">Owner 01</field>
+            <field name="owner_last_name">Demo 01</field>
+        </record>
+        <record id="car_service_02_demo" model="car.service">
+            <field name="license_plate">PLATE02</field>
+            <field name="owner_name">Owner 02</field>
+            <field name="owner_last_name">Demo 02</field>
+        </record>
+        <record id="car_service_03_demo" model="car.service">
+            <field name="license_plate">PLATE03</field>
+            <field name="owner_name">Owner 03</field>
+            <field name="owner_last_name">Demo 03</field>
+        </record>
+        <record id="car_service_04_demo" model="car.service">
+            <field name="license_plate">PLATE04</field>
+            <field name="owner_name">Owner 04</field>
+            <field name="owner_last_name">Demo 04</field>
+        </record>
+
+        <!-- Car Service Line demo -->
+        <!-- Services for PLATE01 -->
+        <record id="car_service_line_01_demo" model="car.service.line">
+            <field name="car_service_id" ref="car_service_01_demo"/>
+            <field name="service_type">Fuel and air filter</field>
+            <field name="price">45.0</field>
+        </record>
+        <record id="car_service_line_02_demo" model="car.service.line">
+            <field name="car_service_id" ref="car_service_01_demo"/>
+            <field name="service_type">Box, battery, hydraulic levels</field>
+            <field name="price">58.0</field>
+        </record>
+        <!-- Services for PLATE02 -->
+        <record id="car_service_line_03_demo" model="car.service.line">
+            <field name="car_service_id" ref="car_service_02_demo"/>
+            <field name="service_type">Fuel and air filter</field>
+            <field name="price">26.0</field>
+        </record>
+        <record id="car_service_line_04_demo" model="car.service.line">
+            <field name="car_service_id" ref="car_service_02_demo"/>
+            <field name="service_type">Box, battery, hydraulic levels</field>
+            <field name="price">80.0</field>
+        </record>
+        <record id="car_service_line_05_demo" model="car.service.line">
+            <field name="car_service_id" ref="car_service_02_demo"/>
+            <field name="service_type">Ignition timing</field>
+            <field name="price">33.0</field>
+        </record>
+        <!-- Service for PLATE04 -->
+        <record id="car_service_line_06_demo" model="car.service.line">
+            <field name="car_service_id" ref="car_service_04_demo"/>
+            <field name="service_type">Fuel and air filter</field>
+            <field name="price">70.0</field>
+        </record>
+    </data>
+</odoo>
