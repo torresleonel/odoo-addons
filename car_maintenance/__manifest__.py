@@ -8,7 +8,7 @@
         Note: developed for job interview.
     """,
     'author': 'Leonel Torres',
-    'website': 'https://github.com/torresleonel',
+    'website': 'https://github.com/torresleonel/odoo-addons',
     'category': 'Services',
     'version': '15.0.0.1',
     'depends': ['base', 'mail'],
@@ -19,9 +19,7 @@
         'report/car_service_templates.xml',
         'report/car_service_reports.xml'
     ],
-    'demo': [
-        # 'demo/demo.xml',
-    ],
+    'demo': ['demo/car_maintenance_demo.xml'],
     'application': True,
     'license': 'LGPL-3'
 }
