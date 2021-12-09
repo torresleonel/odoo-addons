@@ -1,0 +1,465 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* car_maintenance
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-12-09 06:33+0000\n"
+"PO-Revision-Date: 2021-12-09 02:40-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.2.1\n"
+
+#. module: car_maintenance
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_highest_quantity
+msgid "<span>Cars with more services performed</span>"
+msgstr "<span>Vehículos con más servicios realizados</span>"
+
+#. module: car_maintenance
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_highest_quantity
+msgid "<span>License Plate</span>"
+msgstr "<span>Matrícula</span>"
+
+#. module: car_maintenance
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_line_most_requested
+msgid "<span>Quantity</span>"
+msgstr "<span>Cantidad</span>"
+
+#. module: car_maintenance
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_highest_quantity
+msgid "<span>Service Quantity</span>"
+msgstr "<span>Cantidad de Servicios</span>"
+
+#. module: car_maintenance
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_line_most_requested
+msgid "<span>Service most requested</span>"
+msgstr "<span>Servicio más solicitado</span>"
+
+#. module: car_maintenance
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_line_most_requested
+msgid "<span>Service</span>"
+msgstr "<span>Servicio</span>"
+
+#. module: car_maintenance
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_line_most_requested
+msgid "<span>Total Amount</span>"
+msgstr "<span>Monto Total</span>"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__message_needaction
+msgid "Action Needed"
+msgstr "Acción Necesaria"
+
+#. module: car_maintenance
+#: model:ir.model.fields.selection,name:car_maintenance.selection__car_service_line__service_type__clutch
+msgid "Adjustment of the clutch"
+msgstr "Ajuste del clutch"
+
+#. module: car_maintenance
+#: model:ir.model.fields.selection,name:car_maintenance.selection__car_service_line__service_type__ignition_timing
+msgid "Adjustment of the ignition timing"
+msgstr "Ajuste del tiempo de encendido"
+
+#. module: car_maintenance
+#: model:ir.model.fields.selection,name:car_maintenance.selection__car_service_line__service_type__alternator_belt
+msgid "Alternator belt replacement"
+msgstr "Cambio de la faja del alternador"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__message_attachment_count
+msgid "Attachment Count"
+msgstr "Cantidad de Adjuntos"
+
+#. module: car_maintenance
+#: model:ir.model.fields.selection,name:car_maintenance.selection__car_service_line__service_type__box,_battery,_hydraulic_levels
+msgid "Box, battery and hydraulic levels revision"
+msgstr "Revisión de los niveles de la caja, la batería e hidráulico"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service_line__car_service_id
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_line_view_search
+msgid "Car"
+msgstr "Vehículo"
+
+#. module: car_maintenance
+#: model:ir.ui.menu,name:car_maintenance.car_service_report_menu_action
+msgid "Car Highest Number Service"
+msgstr "Vehículos con Mayor Cantidad de Servicios"
+
+#. module: car_maintenance
+#: model:ir.ui.menu,name:car_maintenance.car_maintenance_menu_root
+msgid "Car Maintenance"
+msgstr "Mantenimiento de Vehículos"
+
+#. module: car_maintenance
+#: model:ir.actions.server,name:car_maintenance.car_service_line_report_action_server
+msgid "Car Service Line Report Server Action"
+msgstr "Acción de Servidor para Reporte en Líneas de Servicio de Vehículo"
+
+#. module: car_maintenance
+#: model:ir.actions.server,name:car_maintenance.car_service_report_action_server
+msgid "Car Service Report Server Action"
+msgstr "Acción de Servidor para Reporte en Servicios de Vehículos"
+
+#. module: car_maintenance
+#: model:ir.actions.act_window,name:car_maintenance.car_service_action_window
+#: model:ir.model,name:car_maintenance.model_car_service
+#: model:ir.ui.menu,name:car_maintenance.car_service_menu_action
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_view_form
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_view_graph
+msgid "Car Services"
+msgstr "Servicio de Vehículos"
+
+#. module: car_maintenance
+#: model:ir.model.fields,help:car_maintenance.field_car_service__license_plate
+msgid "Car license plate"
+msgstr "Matrícula de Vehículo"
+
+#. module: car_maintenance
+#: model:ir.model.fields,help:car_maintenance.field_car_service__owner_last_name
+msgid "Car owners last name"
+msgstr "Apellido del Propietario del Vehículo"
+
+#. module: car_maintenance
+#: model:ir.model.fields,help:car_maintenance.field_car_service__owner_name
+msgid "Car owners name"
+msgstr "Nombre del Propietario del Vehículo"
+
+#. module: car_maintenance
+#: model:ir.model.fields,help:car_maintenance.field_car_service_line__car_service_id
+msgid "Car to be serviced"
+msgstr "Vehículo para ser atendido"
+
+#. module: car_maintenance
+#: model:ir.model.fields.selection,name:car_maintenance.selection__car_service_line__service_type__battery_terminals
+msgid "Cleaning of battery terminals"
+msgstr "Limpieza de terminales de batería"
+
+#. module: car_maintenance
+#: model:ir.model.fields.selection,name:car_maintenance.selection__car_service_line__service_type__coolant
+msgid "Coolant replacement"
+msgstr "Cambio del refrigerante"
+
+#. module: car_maintenance
+#: model_terms:ir.actions.act_window,help:car_maintenance.car_service_action_window
+msgid "Create a new car and set up services."
+msgstr "Crea un nuevo vehículo y le aplica servicios"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__create_uid
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__create_date
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service_line__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service_line__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__display_name
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service_line__display_name
+msgid "Display Name"
+msgstr "Nombre para Mostrar"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Socios)"
+
+#. module: car_maintenance
+#: model:ir.model.fields.selection,name:car_maintenance.selection__car_service_line__service_type__fuel_and_air_filter
+msgid "Fuel and air filter replacement"
+msgstr "Cambio del filtro de gasolina y aire"
+
+#. module: car_maintenance
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_line_view_search
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_view_search
+msgid "Group By"
+msgstr "Agrupar Por"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__has_message
+msgid "Has Message"
+msgstr "Tiene Mensaje"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__id
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: car_maintenance
+#: model:ir.model.fields,help:car_maintenance.field_car_service__message_needaction
+#: model:ir.model.fields,help:car_maintenance.field_car_service__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcada, nuevos mensajes requieren su atención."
+
+#. module: car_maintenance
+#: model:ir.model.fields,help:car_maintenance.field_car_service__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcada, algunos mensajes tienen un error de entrega."
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__message_is_follower
+msgid "Is Follower"
+msgstr "Es Seguidor"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service____last_update
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service_line____last_update
+msgid "Last Modified on"
+msgstr "Última Modificación en"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__write_uid
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service_line__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización por"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__write_date
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service_line__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización en"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__license_plate
+msgid "License Plate"
+msgstr "Matrícula"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjunto Principal"
+
+#. module: car_maintenance
+#: model:res.groups,name:car_maintenance.group_manager
+msgid "Maintenance Service Manager"
+msgstr "Gerente del Servicio de Mantenimiento"
+
+#. module: car_maintenance
+#: model:res.groups,name:car_maintenance.group_operator
+msgid "Maintenance Service Operator"
+msgstr "Operador del Servicio de Mantenimiento"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__message_has_error
+msgid "Message Delivery error"
+msgstr "Error en Entrega de Mensaje"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Numero de Acciones"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: car_maintenance
+#: model:ir.model.fields,help:car_maintenance.field_car_service__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren atención"
+
+#. module: car_maintenance
+#: model:ir.model.fields,help:car_maintenance.field_car_service__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de entrega"
+
+#. module: car_maintenance
+#: model:ir.model.fields,help:car_maintenance.field_car_service__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes sin leer"
+
+#. module: car_maintenance
+#: model:ir.model.fields.selection,name:car_maintenance.selection__car_service_line__service_type__oil_and_filter
+msgid "Oil and filter replacement"
+msgstr "Cambio de aceite y filtro"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__owner_last_name
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_view_search
+msgid "Owner Last Name"
+msgstr "Apellido del Propietario"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__owner_name
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_view_search
+msgid "Owner Name"
+msgstr "Nombre del Propietario"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service_line__price
+msgid "Price"
+msgstr "Precio"
+
+#. module: car_maintenance
+#: model:ir.model.fields,help:car_maintenance.field_car_service_line__price
+msgid "Price for the service"
+msgstr "Precio del servicio"
+
+#. module: car_maintenance
+#: model:ir.ui.menu,name:car_maintenance.print_pdf_report_menu
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: car_maintenance
+#: model:ir.model.fields,help:car_maintenance.field_car_service__service_quantity
+msgid "Quantity of services performed on the car"
+msgstr "Cantidad de servicios realizados al vehículo"
+
+#. module: car_maintenance
+#: model:ir.actions.report,name:car_maintenance.car_service_action_report
+msgid "Report Car Highest Service Quantity"
+msgstr "Reporte Vehículos con Mayor Cantidad de Servicios"
+
+#. module: car_maintenance
+#: model:ir.actions.report,name:car_maintenance.car_service_line_action_report
+msgid "Report Service Most Requested"
+msgstr "Reporte Servicios Más Solicitados"
+
+#. module: car_maintenance
+#: model:ir.model,name:car_maintenance.model_report_car_maintenance_car_service_highest_quantity
+msgid "Report for cars with the highest quantity of services"
+msgstr "Reporte de vehículos con la mayor cantidad de servicios"
+
+#. module: car_maintenance
+#: model:ir.model,name:car_maintenance.model_report_car_maintenance_car_service_line_most_requested
+msgid "Report of service most requested"
+msgstr "Reporte de servicios más solicitados"
+
+#. module: car_maintenance
+#: model:ir.ui.menu,name:car_maintenance.top_menu_report
+msgid "Reports"
+msgstr "Reportes"
+
+#. module: car_maintenance
+#: model:ir.model.fields.selection,name:car_maintenance.selection__car_service_line__service_type__brakes_and_front_axle
+msgid "Revision of brakes and front axle"
+msgstr "Revisión de los frenos y el tren delantero"
+
+#. module: car_maintenance
+#: model:ir.model.fields.selection,name:car_maintenance.selection__car_service_line__service_type__lights_and_headlights
+msgid "Revision of lights and headlights"
+msgstr "Revisión de las luces y los faros"
+
+#. module: car_maintenance
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_view_search
+msgid "Search Car Services"
+msgstr "Búsqueda Servicios de Vehículos"
+
+#. module: car_maintenance
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_line_view_search
+msgid "Search Service Type"
+msgstr "Búsqueda Tipos de Servicios"
+
+#. module: car_maintenance
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_view_search
+msgid "Service"
+msgstr "Servicio"
+
+#. module: car_maintenance
+#: model:ir.actions.act_window,name:car_maintenance.car_service_line_action_window
+#: model:ir.ui.menu,name:car_maintenance.car_service_line_menu_action
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_line_view_graph
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_line_view_pivot
+msgid "Service Analysis"
+msgstr "Análisis de Servicio"
+
+#. module: car_maintenance
+#: model_terms:ir.actions.act_window,help:car_maintenance.car_service_line_action_window
+msgid "Service Analysis."
+msgstr "Análisis de Servicio"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__service_line_ids
+msgid "Service Line"
+msgstr "Línea de Servicio"
+
+#. module: car_maintenance
+#: model:ir.ui.menu,name:car_maintenance.car_service_line_report_menu_action
+msgid "Service Most Requested"
+msgstr "Servicio Más Solicitado"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__service_quantity
+msgid "Service Quantity"
+msgstr "Cantidad de Servicios"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service_line__service_type
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_line_view_form
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_line_view_search
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_line_view_tree
+msgid "Service Type"
+msgstr "Tipo de Servicio"
+
+#. module: car_maintenance
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_view_form
+msgid "Services"
+msgstr "Servicios"
+
+#. module: car_maintenance
+#: model:ir.model,name:car_maintenance.model_car_service_line
+msgid "Services performed on cars"
+msgstr "Servicios realizados en los vehículos"
+
+#. module: car_maintenance
+#: model:ir.model.fields,help:car_maintenance.field_car_service__service_line_ids
+msgid "Services performed on the car"
+msgstr "Servicios realizados al vehículo"
+
+#. module: car_maintenance
+#: model:ir.model.fields.selection,name:car_maintenance.selection__car_service_line__service_type__spark_plugs
+msgid "Spark plugs replacement"
+msgstr "Cambio de bujías"
+
+#. module: car_maintenance
+#: model_terms:ir.ui.view,arch_db:car_maintenance.car_service_view_form
+msgid "Sum of Price"
+msgstr "Suma del Precio"
+
+#. module: car_maintenance
+#: model:ir.model.fields,help:car_maintenance.field_car_service_line__service_type
+msgid "Types of services available"
+msgstr "Tipos de servicios disponibles"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__message_unread
+msgid "Unread Messages"
+msgstr "Mensajes Sin Leer"
+
+#. module: car_maintenance
+#: model:ir.model.fields,field_description:car_maintenance.field_car_service__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de Mensajes Sin Leer"
+
+#. module: car_maintenance
+#: model:ir.model.constraint,message:car_maintenance.constraint_car_service_license_plate_key
+msgid "You can not have two cars with the same license plate!"
+msgstr "¡No se pueden tener dos vehículos con la misma matrícula!"

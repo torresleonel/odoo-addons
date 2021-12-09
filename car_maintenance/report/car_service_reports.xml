@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Service most requested action report -->
+    <record id="car_service_line_action_report" model="ir.actions.report">
+        <field name="name">Report Service Most Requested</field>
+        <field name="model">car.service.line</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">car_maintenance.car_service_line_most_requested</field>
+        <field name="binding_model_id" ref="model_car_service_line"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <!-- Cars with the highest quantity of services action report -->
+    <record id="car_service_action_report" model="ir.actions.report">
+        <field name="name">Report Car Highest Service Quantity</field>
+        <field name="model">car.service</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">car_maintenance.car_service_highest_quantity</field>
+        <field name="binding_model_id" ref="model_car_service"/>
+        <field name="binding_type">report</field>
+    </record>
+</odoo>

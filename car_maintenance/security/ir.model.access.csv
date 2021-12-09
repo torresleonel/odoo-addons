@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_car_maintenance_car_maintenance,car_maintenance.car_maintenance,model_car_maintenance_car_maintenance,base.group_user,1,1,1,1
+access_car_service_operator,car.service.operator,model_car_service,car_maintenance.group_operator,1,1,1,0
+access_car_service_line_operator,car.service.line.operator,model_car_service_line,car_maintenance.group_operator,1,1,1,0
+access_car_service_manager,car.service.manager,model_car_service,car_maintenance.group_manager,1,1,1,1
+access_car_service_line_manager,car.service.line.manager,model_car_service_line,car_maintenance.group_manager,1,1,1,1
