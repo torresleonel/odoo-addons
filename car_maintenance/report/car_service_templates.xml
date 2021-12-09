@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Service most requested template report-->
+    <template id="car_service_line_most_requested" name="Report Service Most Requested">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <h2><span>Service most requested</span></h2>
+
+                    <table class="table table-sm o_main_table" name="car_service_table">
+                        <thead>
+                            <tr>
+                                <th name="th_service" class="text-left">
+                                    <span>Service</span>
+                                </th>
+                                <th name="th_quantity" class="text-right">
+                                    <span>Quantity</span>
+                                </th>
+                                <th name="th_amount" class="text-right">
+                                    <span>Total Amount</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="services" t-as="service">
+                                <tr>
+                                    <td>
+                                        <span t-esc="service['service_type']" t-options="{'widget': 'text'}"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="service['service_type_count']"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-esc="res_company.currency_id.symbol"/> <span t-esc="service['price']" t-options="{'widget': 'float', 'precision': 2}"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+
+    <!-- Car highest service quantity template report-->
+    <template id="car_service_highest_quantity" name="Report Car Highest Service Quantity">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page">
+                    <h2><span>Cars with more services performed</span></h2>
+
+                    <table class="table table-sm o_main_table" name="car_service_table">
+                        <thead>
+                            <tr>
+                                <th name="th_license_plate" class="text-left">
+                                    <span>License Plate</span>
+                                </th>
+                                <th name="th_quantity" class="text-right">
+                                    <span>Service Quantity</span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-foreach="cars" t-as="car">
+                                <tr>
+                                    <td>
+                                        <span t-field="car.license_plate" t-options="{'widget': 'text'}"/>
+                                    </td>
+                                    <td class="text-right">
+                                        <span t-field="car.service_quantity"/>
+                                    </td>
+                                </tr>
+                            </t>
+                        </tbody>
+                    </table>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -15,7 +15,8 @@
     'data': [
         # 'security/ir.model.access.csv',
         'views/car_service_views.xml',
-        # 'views/templates.xml',
+        'report/car_service_templates.xml',
+        'report/car_service_reports.xml'
     ],
     'demo': [
         # 'demo/demo.xml',

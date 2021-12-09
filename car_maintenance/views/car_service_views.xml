@@ -65,7 +65,8 @@
                         <field name="service_line_ids" mode="tree">
                             <tree string="Services" editable="bottom">
                                 <field name="service_type"/>
-                                <field name="price" sum="Sum of Price"/>
+                                <field name="currency_id" invisible="1"/>
+                                <field name="price" sum="Sum of Price" widget="monetary"/>
                             </tree>
                         </field>
                     </page>
@@ -123,7 +124,8 @@
             <tree string="Service Type" create="false" delete="false">
                 <field name="service_type"/>
                 <field name="car_service_id"/>
-                <field name="price"/>
+                <field name="currency_id" invisible="1"/>
+                <field name="price" widget="monetary"/>
             </tree>
         </field>
     </record>
@@ -141,7 +143,8 @@
                     </group>
                     <group name="service_details">
                         <field name="service_type"/>
-                        <field name="price"/>
+                        <field name="currency_id" invisible="1"/>
+                        <field name="price" widget="monetary"/>
                     </group>
                 </group>
             </sheet>
@@ -173,6 +176,7 @@
         </field>
     </record>
 
+
     <!-- **** ACTIONS **** -->
     <!-- Car Service action window definition -->
     <record id="car_service_action_window" model="ir.actions.act_window">
@@ -197,6 +201,41 @@
             </p>
         </field>
     </record>
+
+    <!--
+        The actions called for the following server actions are in
+        report/car_service_report.xml
+
+        Since reporting actions need id/ids or data, which is taken from the
+        context of the view where they are called, they must be "manually"
+        passed at least one id. For this reason the following server actions
+        are used, since the report actions will be called directly from the
+        menu.
+    -->
+    <!-- Car Service Line server action to call the report action -->
+    <record id="car_service_line_report_action_server" model="ir.actions.server">
+        <field name="name">Car Service Line Report Server Action</field>
+        <field name="model_id" ref="model_car_service_line"/>
+        <field name="state">code</field>
+        <field name="code">
+                action = env.ref(
+                    'car_maintenance.car_service_line_action_report'
+                ).report_action(1)
+        </field>
+    </record>
+
+    <!-- Car Service server action to call the report action -->
+    <record id="car_service_report_action_server" model="ir.actions.server">
+        <field name="name">Car Service Report Server Action</field>
+        <field name="model_id" ref="model_car_service"/>
+        <field name="state">code</field>
+        <field name="code">
+                action = env.ref(
+                    'car_maintenance.car_service_action_report'
+                ).report_action(1)
+        </field>
+    </record>
+
 
     <!-- **** MENU ITEMS **** -->
     <!-- Car Service root menu item -->
@@ -223,5 +262,28 @@
         name="Service Analysis"
         parent="top_menu_report"
         action="car_service_line_action_window"
+    />
+
+    <!-- Print PDF Reports menu category -->
+    <menuitem
+        id="print_pdf_report_menu"
+        name="Print"
+        parent="top_menu_report"
+    />
+
+    <!-- Service most requested menu action -->
+    <menuitem
+        id="car_service_line_report_menu_action"
+        name="Service Most Requested"
+        parent="print_pdf_report_menu"
+        action="car_service_line_report_action_server"
+    />
+
+    <!-- Car Highest Number Service menu action -->
+    <menuitem
+        id="car_service_report_menu_action"
+        name="Car Highest Number Service"
+        parent="print_pdf_report_menu"
+        action="car_service_report_action_server"
     />
 </odoo>

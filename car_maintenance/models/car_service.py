@@ -45,17 +45,20 @@ class CarServiceLine(models.Model):
     _name = 'car.service.line'
     _description = 'Services performed on cars'
 
+    def _default_currency_id(self):
+        return self.env.user.company_id.currency_id.id
+
     car_service_id = fields.Many2one(
         string='Car',
         help='Car to be serviced',
         comodel_name='car.service',
         required=True
     )
-    price = fields.Float(
-        help='Price for the service',
-        digits='Product Price',
-        required=True
+    currency_id = fields.Many2one(
+        comodel_name='res.currency',
+        default=_default_currency_id
     )
+    price = fields.Monetary(help='Price for the service', required=True)
     service_type = fields.Selection(
         selection=[
             ('Spark plugs', 'Spark plugs replacement'),
