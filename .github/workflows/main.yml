@@ -17,4 +17,4 @@ jobs:
             - uses: actions/checkout@v2
 
             - name: Run Odoo unit tests
-                run: docker-compose run odoo -d testdb -i car_maintenance --log-level=test --test-tags /car_maintenance --stop-after-init
+              run: docker-compose run odoo -d testdb -i car_maintenance --log-level=test --test-tags /car_maintenance --stop-after-init
